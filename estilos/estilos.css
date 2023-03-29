@@ -8,9 +8,9 @@
     --color-blanco: #fcfcfc;
     --color-negro: #202020;
     
-    --color-1: #fae5bf;
+    --color-1: #faf1bf;
     --color-2: #ffbf9b;
-    --color-3: #e77b7b;
+    --color-3: #e79f6e;
     --color-4: #a74a4a;
 
     /*--color-1: #FFFFD0;
@@ -21,13 +21,24 @@
 
 body {
     font-size: 1.1rem;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    background-color: #303030;
+    font-family: 'Lobster', sans-serif;
     height: 50vh;
-    min-height: 300px;
+    min-height: 400px;
+}
+
+header h1 {
+    padding: 20px;
+    background-color: transparent;
+    font-size: 3rem;
+}
+
+header span {
+    font-size: 4rem;
+    color: var(--color-1);
 }
 
 nav {
@@ -46,9 +57,11 @@ nav ul {
 }
 
 h1, h2, h3 {
+    font-family: 'Lobster', 'Poppins', sans-serif;
     background-color: rgba(117, 41, 41, 0.2);
     padding: 5px;
     margin-bottom: 25px;
+    width: 80%;
     max-width: 450px;
 }
 
@@ -74,7 +87,7 @@ section {
 }
 
 .b-1 {
-    padding: 0;
+    padding: 10px;
     flex: 250px;
     background-color: #101010;
     min-height: 300px;

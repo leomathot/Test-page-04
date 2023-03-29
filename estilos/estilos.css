@@ -31,7 +31,7 @@ header {
 }
 
 nav {
-    padding: 3px;
+    padding: 5px;
     position: sticky;
     top: -1px;
     z-index: 10;
@@ -107,13 +107,9 @@ section {
     flex: 450px;
 }
 
-.bloque-solo {
-    padding: 70px 5%;
-}
-
 .fondo-blanco {
     background-color: var(--color-blanco);
-    color: #101010;
+    color: var(--color-4);
 }
 
 .fondo-negro {

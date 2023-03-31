@@ -231,6 +231,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
 }
 
 footer p {
@@ -243,6 +244,7 @@ footer p:first-of-type {
 
 footer .redes {
     flex: 200px;
+    max-width: 250px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -295,8 +297,8 @@ footer .redes a:hover {
     }
 }
 
-/* ///// PUNTO DE CORTE ALTO 500PX ///// */
-/* en telefono pantalla horizontal el header ocupa toda la pantalla */
+/* ///// PUNTO DE CORTE ALTO (max-height) 500PX ///// */
+/* en telefono horizontal el header ocupa toda la pantalla */
 @media (max-height: 500px) {
     header {
         height: 100vh;

@@ -161,7 +161,7 @@ section {
     max-width: 600px;
 }
 
-.b-1 {
+.bloque-img {
     padding: 10px;
     flex: 250px;
     display: flex;
@@ -169,7 +169,7 @@ section {
     align-items: start;
 }
 
-.b-1 img {
+.bloque-img img {
     width: 100%;
     max-width: 500px;
     height: 100%;
@@ -247,7 +247,8 @@ footer .redes {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    align-content: center;
+    align-content: start;
+    margin-top: 10px;
 }
 
 
@@ -258,4 +259,30 @@ footer .redes a {
 footer .redes a:hover {
     background-color: rgba(117, 41, 41, 0.5);
     color: var(--color-1);
+}
+
+/* ///// PUNTO DE CORTE 700PX ///// */
+@media (max-width: 700px) {
+    .bloque {
+        padding: 60px 20px 60px 10px;
+    }
+    .bloque p {
+        padding-left: 20px;
+    }
+    footer {
+        padding: 70px 25px;
+    }
+}
+
+/* ///// PUNTO DE CORTE 360PX ///// */
+@media (max-width: 360px) {
+    .bloque {
+        padding: 60px 10px 60px 10px;
+    }
+    .bloque p {
+        padding-left: 0;
+    }
+    footer {
+        padding: 70px 10px;
+    }
 }

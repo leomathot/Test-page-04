@@ -261,7 +261,7 @@ footer .redes a:hover {
     color: var(--color-1);
 }
 
-/* ///// PUNTO DE CORTE 700PX ///// */
+/* ///// PUNTO DE CORTE ANCHO 700PX ///// */
 @media (max-width: 700px) {
     .bloque {
         padding: 60px 20px 60px 10px;
@@ -274,7 +274,7 @@ footer .redes a:hover {
     }
 }
 
-/* ///// PUNTO DE CORTE 360PX ///// */
+/* ///// PUNTO DE CORTE ANCHO 360PX ///// */
 @media (max-width: 360px) {
     .bloque {
         padding: 60px 10px 60px 10px;
@@ -284,5 +284,13 @@ footer .redes a:hover {
     }
     footer {
         padding: 70px 10px;
+    }
+}
+
+/* ///// PUNTO DE CORTE ALTO 500PX ///// */
+/* en telefono pantalla horizontal el header ocupa toda la pantalla */
+@media (max-height: 500px) {
+    header {
+        height: 100vh;
     }
 }

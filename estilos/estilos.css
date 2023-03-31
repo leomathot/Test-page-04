@@ -276,6 +276,9 @@ footer .redes a:hover {
 
 /* ///// PUNTO DE CORTE ANCHO 360PX ///// */
 @media (max-width: 360px) {
+    header {
+        height: 100vh;
+    }
     .bloque {
         padding: 60px 10px 60px 10px;
     }

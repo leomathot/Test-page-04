@@ -275,11 +275,15 @@ footer .redes a:hover {
     }
 }
 
-/* ///// PUNTO DE CORTE ANCHO 360PX ///// */
-@media (max-width: 360px) {
+/* ///// PUNTO DE CORTE ANCHO 500PX ///// */
+@media (max-width: 500px) {
     header {
         height: 100vh;
     }
+}
+
+/* ///// PUNTO DE CORTE ANCHO 360PX ///// */
+@media (max-width: 360px) {
     .bloque {
         padding: 60px 10px 60px 10px;
     }

@@ -102,33 +102,59 @@ header .num {
 }
 
 nav {
-    padding: 5px;
+    padding: 5px 15px;
     position: sticky;
     top: -1px;
     z-index: 10;
-}
-
-nav ul {
-    list-style: none;
     display: flex;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 20px;
+    justify-content: flex-end;
 }
 
 a {
     text-decoration: none;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
-nav ul a {
+nav a {
     padding: 4px 8px;
     margin: 0 4px;
 }
 
-nav ul a:hover {
+nav a:hover {
     background-color: rgba(117, 41, 41, 0.5);
     color: var(--color-1);
+}
+
+nav .nav-links {
+    display: flex;
+    width: fit-content;
+}
+
+nav .drop-down {
+    display: none;
+    position: relative;
+    padding: 4px 8px;
+}
+
+nav .drop-down-content {
+    display: none;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    background-color: var(--negro);
+    padding: 10px;
+}
+
+nav .drop-down-content a {
+    display: block;
+}
+
+nav .drop-down:hover {
+    background-color: rgba(117, 41, 41, 0.5);
+}
+
+nav .drop-down:hover .drop-down-content {
+    display: block;
 }
 
 h1, h2, h3 {
@@ -261,6 +287,12 @@ footer .redes a:hover {
 
 /* PUNTO DE CORTE ANCHO 700PX */
 @media (max-width: 700px) {
+    nav .nav-links {
+        display: none;
+    }
+    nav .drop-down {
+        display: block;
+    }
     .bloque {
         padding: 60px 20px 60px 10px;
     }
